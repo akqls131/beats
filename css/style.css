@@ -1,0 +1,285 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* COMMON */
+body {
+    font-family: 'Roboto', 'Helvetica','Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #FF4642;
+}
+hr {
+    display: none;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.blind {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* LAYOUT */
+#wrapper {
+    width:100%;
+    background-color:#ffc700;
+}
+
+/*HEADER*/
+
+.header-wrap {
+    width: 100%;
+}
+.header-wrap header {
+    position:relative;
+    /*width:1240px;*/
+    width:100%;
+    padding:26px 20px 0;
+    margin:0 auto 100px;
+    box-sizing:border:box;
+    min-width:1240px;
+}
+
+.header-wrap header h1 {
+    float: left;
+    margin-right:270px;
+}
+.header-wrap header nav {
+ /*   float:left;*/
+       /*margin-top:10px;*/
+       width:600px;
+       /*margin:10px auto 0;*/
+       position:absolute;
+       top:36px;
+       left:50%;
+       margin-left:-300px;
+}
+/*width: 100%일때 가운데 정렬은 absoulte로 맞춘다;*/
+
+
+
+.header-wrap header ul li {
+    float:left;
+}
+.header-wrap header ul li a {
+    display:block;
+    width:150px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    font-size:16px;
+    color:#fff;
+    text-transform:uppercase
+}
+
+.header-wrap header nav ul li a:hover {
+    color:#333;
+}
+
+.header-wrap header .search {
+
+    float:right;
+}
+
+.header-wrap header .search a {
+    display:block;
+    width:50px;
+    height:50px;
+    background: url( "../img/icon_search.png") no-repeat;
+    text-indent:-9999px;
+    overflow:hidden;
+}
+
+.header-wrap header .search a:hover {
+    background:url(../img/icon_search1.png) -50px;
+}
+
+/*Main*/
+
+.main-wrap {
+    width:100%;
+    margin-bottom:50px;
+}
+
+.main-wrap main {
+    width:1240px;
+    margin:0 auto;
+    padding:0 20px;
+}
+.main-wrap main > figure {
+    float:left;
+    width:50%;
+    text-align:center;
+}
+.main-wrap main .txt-wrap {
+    float:left;
+    width:50%;
+}
+.main-wrap main .txt-wrap h2 {
+    font-size:70px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+    line-height:1;
+    margin-bottom:5px;
+}
+.main-wrap main .txt-wrap h3 {
+    font-size:18px;
+    font-weight:700;
+    text-transform:uppercase;
+    line-height:1;
+    margin-bottom:10px;
+}
+.main-wrap main .txt-wrap figure {
+    margin-bottom:30px;
+}
+.main-wrap main .txt-wrap figure + p {
+    width:500px;
+    margin-bottom:15px;
+
+}
+.main-wrap main .txt-wrap ul {
+    margin-bottom:50px;
+}
+.main-wrap main .txt-wrap ul li {
+    line-height:18px;
+    margin-bottom:16px;
+    padding-left:12px;
+    position:relative;
+
+}
+.main-wrap main .txt-wrap ul li::before {
+    position:absolute;
+    content:"";
+    display:block;
+    border-radius:50%;
+    width:4px;
+    height: 4px;
+    background-color:#333;
+    top:7px;
+    left:0;
+}
+.main-wrap main .price {
+    margin-bottom:17px;
+}
+.main-wrap main .price p {
+    font-size:12px;
+    color: #fff;
+}
+.main-wrap main .price .btn {
+    float:left;
+}
+.main-wrap main .price .btn {
+    margin-bottom:20px;
+}
+.main-wrap main .txt-wrap .price h4 {
+    font-size:40px;
+    font-weight:700;
+    line-height: 1;
+    float:left;
+    margin-right:30px;
+}
+.main-wrap main .txt-wrap .price .btn a {
+    display:block;
+    width:170px;
+    background-color:#333;
+    height:40px;
+    color:#FFF;
+    border-radius:20px;
+    text-align:center;
+    line-height:40px;
+    text-transform:uppercase;
+} 
+
+
+/*footer*/
+
+.footer-wrap {
+    width:100%;
+    background-color: #333;
+    color: #999;
+    text-align:center;
+    padding:50px 0;
+}
+
+.footer-wrap a {
+    color:#fff;
+}
+.footer-wrap footer nav {
+    margin-bottom:20px;
+}
+
+.footer-wrap footer ul li {
+    display:inline;
+    margin-right:30px;
+}
+.footer-wrap footer ul li:last-child :
+margin-right:0;
